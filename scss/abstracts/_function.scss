@@ -1,0 +1,24 @@
+@mixin bg-card($bg) {
+    @if $bg == bg-1 {
+        background-color: $Moderate-violet;
+        color: $Light-gray;
+    }
+    @else if $bg == bg-2 {
+        background-color: $Very-dark-grayish-blue;
+        color: $Light-gray;
+    }
+    @else if $bg == bg-3 {
+        background-color: $white;
+        color: $Very-dark-grayish-blue;
+        box-shadow: 10px 18px 20px $Light-gray
+    }
+    @else if $bg == bg-4 {
+        background-color: $Very-dark-blackish-blue;
+        color: $Light-gray;
+    }
+    @else if $bg == bg-5 {
+        background-color: $white;
+        color: $Very-dark-grayish-blue;
+        box-shadow: 10px 18px 20px $Light-gray;
+    } 
+}

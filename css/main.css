@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;600&display=swap");
+/*****Layout*****/
+/*****Colors*****/
+/*
+Note for text colors:
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+/*****Typography*****/
+/*****Font*****/
+body {
+  font-family: "Barlow Semi Condensed", sans-serif; }
+
+body {
+  margin: 1em;
+  background-color: #ecf2f8; }
+
+.testimonials {
+  display: grid;
+  row-gap: 2.3em; }
+  .testimonials .box-testimonial {
+    border-radius: 15px;
+    padding: 1.5em; }
+    .testimonials .box-testimonial h2 {
+      font-size: 1.8rem; }
+    .testimonials .box-testimonial .people {
+      display: flex;
+      align-items: center; }
+      .testimonials .box-testimonial .people div {
+        width: 3em;
+        margin-right: 1.4em; }
+        .testimonials .box-testimonial .people div img {
+          border: 1px solid white;
+          border-radius: 50%;
+          width: 100%; }
+      .testimonials .box-testimonial .people h3 {
+        font-size: 1.3rem; }
+        .testimonials .box-testimonial .people h3 span {
+          opacity: 0.5;
+          font-size: 1.2rem;
+          display: block; }
+    .testimonials .box-testimonial p {
+      line-height: 1.3;
+      font-size: 1.3rem;
+      opacity: 0.7; }
+    .testimonials .box-testimonial__bg-1 {
+      background-color: #7541c8;
+      color: #cfcfcf;
+      position: relative;
+      z-index: 2; }
+      .testimonials .box-testimonial__bg-1 .bg-image {
+        position: absolute;
+        top: 0;
+        left: 55%;
+        z-index: -1;
+        width: 11em; }
+    .testimonials .box-testimonial__bg-2 {
+      background-color: #48556a;
+      color: #cfcfcf; }
+    .testimonials .box-testimonial__bg-3 {
+      background-color: white;
+      color: #48556a;
+      box-shadow: 10px 18px 20px #cfcfcf; }
+    .testimonials .box-testimonial__bg-4 {
+      background-color: #19212e;
+      color: #cfcfcf; }
+    .testimonials .box-testimonial__bg-5 {
+      background-color: white;
+      color: #48556a;
+      box-shadow: 10px 18px 20px #cfcfcf; }
+
+@media only screen and (min-width: 1145px) {
+  .testimonials {
+    gap: 2.3em;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto; }
+    .testimonials .box-testimonial__bg-1 {
+      grid-column: 1/3;
+      grid-row: 1/2; }
+      .testimonials .box-testimonial__bg-1 .bg-image {
+        width: 11em; }
+    .testimonials .box-testimonial__bg-2 {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .testimonials .box-testimonial__bg-3 {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+    .testimonials .box-testimonial__bg-4 {
+      grid-column: 2/4;
+      grid-row: 2/3; }
+    .testimonials .box-testimonial__bg-5 {
+      grid-column: 4/5;
+      grid-row: 1/3; } }
